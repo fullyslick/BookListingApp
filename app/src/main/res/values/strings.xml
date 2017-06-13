@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BookListingApp</string>
+    <string name="max_results">Max results to display:</string>
+    <string name="empty_input_toast">You have not entered any word or phrase to perform a search!</string>
+    <string name="enter_title">Enter Title Here</string>
+    <string name="default_message">No results found. Please enter a word or a phrase to search for a book with that title.</string>
+    <string name="title_label">Title:</string>
+    <string name="title_placeholder_tools">Some title of a book</string>
+    <string name="author_label">Author:</string>
+    <string name="author_placeholder_tools">List of authors here, or just one author</string>
+    <string name="no_connection">No internet connection</string>
+    <string name="error_response_code">Error response code:</string>
+    <string name="problem_parsing">Problem parsing the earthquake JSON results</string>
+    <string name="problem_retrieving_json_results">Problem retrieving the book JSON results.</string>
+    <string name="onStartLoading">onStartLoading() is called</string>
+    <string name="loadInBackground">loadInBackground() is called! This is what receives as input: </string>
+</resources>

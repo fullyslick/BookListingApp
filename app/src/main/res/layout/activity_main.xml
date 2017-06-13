@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.booklistingapp.MainActivity">
+
+    <LinearLayout style="@style/holderUserQuery">
+
+        <EditText
+            android:id="@+id/user_query"
+            style="@style/userQueryStyle" />
+
+        <TextView style="@style/maxResultTextStyle" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/decreaseButton"
+                    style="@style/incrdecrBtnStyle"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/maxResultsValue"
+                    style="@style/valueMaxResultsStyle"
+                    tools:text="10" />
+
+                <Button
+                    android:id="@+id/increaseButton"
+                    style="@style/incrdecrBtnStyle"
+                    android:text="+" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/search_button"
+                style="@style/searchIconStyle" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/empty_list_view"
+            style="@style/emptyListViewStyle" />
+
+        <ProgressBar
+            android:id="@+id/loading_spinner"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>
